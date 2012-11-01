@@ -1,0 +1,66 @@
+/*
+ * Copyright (c) 2012, Intel Corporation
+ * File revision: 12 October 2012
+ * Please see http://software.intel.com/html5/license/samples 
+ * and the included README.md file for license terms and conditions.
+ */
+#handbell {
+    background-image:url(../resource/handbell_init.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    position:relative;
+    height:100%;
+}
+
+#bellcenter {
+    background-image:url(../resource/handbell_center.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:100%;
+    /*display:none;*/
+}
+#bellleft {
+    background-image:url(../resource/handbell_left.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:100%;
+    display:none;
+}
+
+#bellright {
+    background-image:url(../resource/handbell_right.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:100%;
+    display:none;
+}
+
+#bellleftring {
+    background-image:url(../resource/handbell_left_ring.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:100%;
+    width:100%;
+    display:none;
+    position:absolute;
+    top:0;
+    z-index:100;
+}
+
+#bellrightring {
+    background-image:url(../resource/handbell_right_ring.png);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:contain;
+    height:100%;
+    display:none;
+    width:100%;
+    position:absolute;
+    top:0;
+    z-index:100;
+}
