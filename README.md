@@ -6,14 +6,18 @@ License Information Follows
 * index.html
 * css/handbell.css
 * js/handbell.js
-* resource/bell.mp3
-* resource/bell-end.mp3
 * resource/handbell_center.png
 * resource/handbell_init.png
 * resource/handbell_left_ring.png
 * resource/handbell_left.png
 * resource/handbell_right_ring.png
 * resource/handbell_right.png
+* app.json
+* sreenshot.png
+* sample_icon.png
+* abstract.txt
+* README.md
+* config.xml
 
 
 Copyright (c) 2012, Intel Corporation
@@ -59,13 +63,6 @@ Cordova (PhoneGap) Library
 
 * source:  http://www.phonegap.com/
 * license:  http://www.apache.org/licenses/LICENSE-2.0.html
-
-IMAGES
-------
-All images and icons were created by Intel Corporation and are licensed
-under the Creative Commons Attribution 3.0 license 
-http://creativecommons.org/licenses/by/3.0/us/
-
 
 MEDIA
 -----
