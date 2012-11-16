@@ -35,9 +35,9 @@ function onDeviceReady() {
 	var path = getPhoneGapPath();
 	//media initialization
 	bellsound = new Media(path + "resource/bell.mp3",
-			onRingSuccess(bellsound), onRingError);
+			onRingSuccess, onRingError);
 	bellend = new Media(path + "resource/bell-end.mp3",
-			onRingSuccess(bellend), onRingError);
+			onRingSuccess, onRingError);
     var options = { frequency: frequency };
 
     accelID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
@@ -69,15 +69,19 @@ function onSuccess(acceleration) {
     var z = acceleration.z;
     var t = false;
     if (previous){
-	    if (isShaking(previous, acceleration, 10)){    	
+        if (isShaking(previous, acceleration, 10)){    	
 	    	moveBell(sign(x));	
-	    	bellsound.play();
+            if (bellsound){
+                bellsound.play();
+            }
 	    	accelerated = true;
 	    }
 	    else {
 	    	stopBell(acceleration);
 	    	if (accelerated == true){
-	    		bellend.play();
+                if (bellend){
+                    bellend.play();
+                }
 	    	}
 	    	accelerated = false;
 	    }
@@ -171,16 +175,13 @@ function stopBell(curAccelerometer) {
 }
 //onRingSuccess Callback
 function onRingSuccess(media) {
-	if (media){
-	media.release();
-	}
 	console.log("Media API Success");
 }
 // onRingError Callback 
 function onRingError(error) {
-	alert('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
+    console.log('code: ' + error.code + '\n' + 'message: ' + error.message + '\n');
 }
 // onError Callback
 function onError() {
-    alert('Device error happened!');
+    console.log('Device error happened!');
 }
