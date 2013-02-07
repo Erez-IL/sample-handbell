@@ -1,6 +1,13 @@
 This sample application demonstrates the use of the PhoneGap Accelerometer API 
 "HandBell" allows you to shake a picture of a bell and hear sounds. 
 
+Intel(R) HTML5 Development Environment Beta
+-------------------------------------------
+This sample is part of the Intel(R) HTML5 Development Environment tool. 
+Please sign up the beta at http://software.intel.com/en-us/html5.
+To see the technical detail of the sample, please visit the sample article page 
+at http://software.intel.com/en-us/articles/create-handbell-using-html5-and-phonegap. 
+
 License Information Follows
 ---------------------------
 * index.html
