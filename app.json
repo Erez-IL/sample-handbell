@@ -5,5 +5,5 @@
 	"description":"Shake a picture of a bell and hear sounds. A demonstration of the PhoneGap media object.",
 	"articleurl":"http://software.intel.com/en-us/articles/create-handbell-using-html5-and-phonegap",
 	"categories":["PhoneGap"],
-	"visible" : "true"
+	"visible" : "false"
 }
